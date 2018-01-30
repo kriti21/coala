@@ -165,7 +165,7 @@ Now it is time to pick an issue.
 It is the best way to familiarise yourself with the codebase.
 You can view `all Newcomer issues on GitHub <https://coala.io/new>`_.
 
-.. note::
+.. caution::
 
     You need to be logged in before you follow the Newcomer issues link.
 
@@ -182,12 +182,12 @@ Leave a comment that you would like to be assigned to the issue. This way
 we don't have multiple people working on the same issue at the same time.
 Now you can start working on it!
 
-.. note::
+.. caution::
 
     As stated above, you should never work on an issue without being
     assigned. Fortunately, corobo is here to help you! If you are
     interested in picking up an issue, just write the following command
-    in gitter chat::
+    in gitter chat
 
         corobo assign <issue_link>
 
@@ -198,27 +198,31 @@ Now you can start working on it!
     You can do amazing stuff using corobo.
 
         * Issue assigning as stated earlier.
-        * File issues::
+        * File issues
 
-            corobo file issue <repo> <title>
-            <description>
+            **corobo file issue <repo> <title>**
+            **<description>**
 
-        * You shouldn't close any PR, instead mark them as work in progress::
+        * You shouldn't close any PR, instead mark them as work in progress
 
-            corobo mark wip <full url>
+            **corobo mark wip <full url>**
 
-        * To label a PR as pending review::
+        * To label a PR as pending review
 
-            corobo mark pending <full url>
+            **corobo mark pending <full url>**
 
+<<<<<<< HEAD
         * To see all of the corobo commands, ::
+=======
+        * To see all of the corobo commands
+>>>>>>> 0e99309... Newcomers_Guide: Improves emphasis of material
 
-            corobo help
+            **corobo help**
 
     Before starting your first commit, check out this
     link: `Writing good commits <http://coala.io/commit>`_.
 
-.. seealso::
+.. caution::
 
     An important part of working on issues is documenting your work
     in such a way that it is easy for others to read and understand.
@@ -246,7 +250,7 @@ repository, go to the official repository of coala/coala-bears and click on the
 where ``myfork`` is the name of your fork, and ``fork_link`` is a link to your
 fork repository.
 
-.. note::
+.. important::
    It is important that you **DO NOT** make your changes on the master branch
    of your forked repository to avoid the following cases:
 
@@ -271,9 +275,9 @@ fork repository.
    In order to avoid the above mentioned cases you can create a new branch
    where you will work on the issue. To do that run:
 
-   ::
-
         $ git checkout -b <branchname>
+
+   ::
 
 Now you need to make sure your change is actually working. For this, you will
 need to test it locally before pushing it to your fork and checking it with
@@ -300,14 +304,14 @@ into your bash prompt. This will analyze your code and help you fix it.
 Step 4. Sending Your Changes
 ----------------------------
 
-.. note::
+.. caution::
 
    Before committing your changes, please check that you are indeed in a
    development branch created in step 4. To check if you are in a branch, type:
 
-   ::
-
          $ git branch
+
+   ::
 
    Your current branch will have an asterisk (\*) next to it. Ensure that there
    is no asterisk next to the master branch.
@@ -389,7 +393,7 @@ Now there are two possibilities:
 - your ``Pull Request`` doesn't get accepted, and therefore you will
   need to to modify it as per the review comments
 
-.. note::
+.. caution::
 
     Wait until the reviewer has reviewed your whole Pull Request
     and has labeled it ``process/wip``. If you push again before that happens,
@@ -439,7 +443,7 @@ Now you should `tell us about your experience <https://coala.io/newform>`_ and
 go for `a low issue <https://coala.io/low>`__ - they are really rewarding!
 
 
-.. note::
+.. caution::
 
     Do not delete the fork subsequent to Pull Request for review or
     after it is merged!
